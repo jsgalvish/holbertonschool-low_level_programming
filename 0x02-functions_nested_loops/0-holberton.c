@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "holberton.h"
 #include <string.h>
 
 /**
@@ -11,7 +11,7 @@ int main(void)
 {
 	char str[] = "Holberton\n";
 
-	for (int i = 0; i < strlen(str); i++)
+	for (int i = 0; (unsigned) i < strlen(str); i++)
 		_putchar(str[i]);
 	return (0);
 }
