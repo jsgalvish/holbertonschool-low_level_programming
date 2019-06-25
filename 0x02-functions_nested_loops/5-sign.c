@@ -1,33 +1,25 @@
 #include "holberton.h"
-
 /**
- * print_alphabet - void
+ * print_sign - prints the sign of a number
+ * @n: the number to be evaluate
  *
- * Return: double numbers with ,
+ * Return: 1 is positive -1 if is negative
  */
-
 int print_sign(int n)
 {
-	int result;
-	
-	if (n == 0)
-	{	
+	if (n > 0)
+	{
+		_putchar('+');
+		return (1);
+	}
+	else if (n == 0)
+	{
 		_putchar('0');
-		result = 0;
+		return (0);
 	}
 	else
 	{
-		if( n < 0 )
-		{
-			_putchar('-');
-			result = -1;
-		}
-		else
-		{
-			_putchar('+');
-			result = 1;
-		}
+		_putchar('-');
+		return (-1);
 	}
-
-	return (result);
 }

@@ -1,20 +1,19 @@
 #include "holberton.h"
-
 /**
- * print_alphabet - void
+ * _islower - check lower case
+ * @c: value to check
  *
- * Return: double numbers with ,
+ * Return: 1 if is lowercase
  */
 
 int _islower(int c)
 {
-	int result = 0;
-	
-	for (int i = 'a'; i <= 'z'; i++)
-		if (c == i)
-			result = 1;
-
-	return (result);
-		
-	
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

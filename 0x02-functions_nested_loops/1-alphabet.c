@@ -1,15 +1,18 @@
 #include "holberton.h"
-
 /**
- * print_alphabet - void
+ * print_alphabet - Prints the alphabet, in lowercase, followed by a new line.
  *
- * Return: double numbers with ,
+ * Return: Always 0.
  */
 
 void print_alphabet(void)
 {
-	for (int i = 'a'; i <= 'z'; i++)
-		_putchar(i);
-	_putchar('\n');
+	char l = 'a';
 
+	while (l <= 'z')
+	{
+		_putchar (l);
+		l++;
+	}
+	_putchar('\n');
 }

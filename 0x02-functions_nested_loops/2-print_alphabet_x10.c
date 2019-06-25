@@ -1,17 +1,24 @@
 #include "holberton.h"
-
 /**
- * print_alphabet - void
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase
  *
- * Return: double numbers with ,
+ * Return: Always 0.
  */
 
 void print_alphabet_x10(void)
 {
-	for (int i = 0; i <= 9; i++)
+	int i = 0;
+
+	while (i <= 9)
 	{
-		for (int i = 'a'; i <= 'z'; i++)
-			_putchar(i);
+		char l = 'a';
+
+		while (l <= 'z')
+		{
+			_putchar (l);
+			l++;
+		}
 		_putchar('\n');
+		i++;
 	}
 }

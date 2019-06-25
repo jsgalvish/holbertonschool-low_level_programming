@@ -1,21 +1,18 @@
 #include "holberton.h"
-
 /**
- * print_alphabet - void
- *
- * Return: double numbers with ,
+ * _isalpha - checks for alphabetic character
+ * @c: value to check
+ * Return: 1 if is a char
  */
 
 int _isalpha(int c)
 {
-	int result = 0;
-	
-	for (int i = 'A'; i <= 'Z'; i++)
-		if (c == i)
-			result = 1;
-	for (int i = 'a'; i <= 'z'; i++)
-		if (c == i)
-			result = 1;
-
-	return (result);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

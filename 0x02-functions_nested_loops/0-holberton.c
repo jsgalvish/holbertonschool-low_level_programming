@@ -1,17 +1,22 @@
 #include "holberton.h"
-#include <string.h>
-
 /**
- * main - void
+ * main - Print "Holberton" String
  *
- * Return: double numbers with ,
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char str[] = "Holberton\n";
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
 
-	for (int i = 0; (unsigned) i < strlen(str); i++)
-		_putchar(str[i]);
 	return (0);
 }
