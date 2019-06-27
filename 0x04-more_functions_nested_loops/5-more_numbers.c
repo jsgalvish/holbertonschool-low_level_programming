@@ -1,18 +1,22 @@
 #include "holberton.h"
+
 /**
 * more_numbers - print numbers from 0 to 14 3 times
+*
 * Return: nothing
 */
 
 void more_numbers(void)
 {
-	for (int j = 0; j < 3; j++)
+	int i, j;
+
+	for (i = 0; i < 10; i++)
 	{
-		for (int i = 0; i < 15; i++)
+		for (j = 0; j < 15; j++)
 		{
-			if (i > 9)
-				_putchar('1');
-			_putchar('0' + (i % 10));
+			if (j > 9)
+				_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
 		}
 		_putchar('\n');
 	}
