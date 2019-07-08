@@ -1,16 +1,25 @@
 #include "holberton.h"
 #include <stdio.h>
-
+/**
+ * print_diagsums - Print the sum of the two digonal of a square.
+ * @a: type char string
+ * @size: type int
+ * Return: Always 0.
+ */
 void print_diagsums(int *a, int size)
 {
-	int i, sum1, sum2;
+	int i, j, sumdiag1 = 0, sumdiag2 = 0, step1, step2;
 
-	sum1 = 0;
-	for (i = 0; i < size * size; i += size + 1)
-		sum1 += a[i];
+	for (i = 0; i <= (size - 1); i++)
+	{
+		step1 =  (size + 1) * i;
+		sumdiag1 = sumdiag1 + *(a + step1);
+	}
 
-	for (i = size - 1; i < (size * size) - 1; i += size - 1)
-		sum2 += a[i];
-
-	printf("%d, %d \n", sum1, sum2);
+	for (j = 1; j <= size; j++)
+	{
+		step2 = (size - 1) * j;
+		sumdiag2 = sumdiag2 + *(a + step2);
+	}
+	printf("%d, %d\n", sumdiag1, sumdiag2);
 }
