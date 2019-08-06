@@ -23,10 +23,7 @@ File | Description
 8-sum_listint.c | Write a function that returns the sum of all the data (n) of a listint_t linked list
 9-insert_nodeint.c | Write a function that inserts a new node at a given position
 10-delete_nodeint.c | Write a function that deletes the node at index index of a listint_t linked list
-100-reverse_listint.c | Write a function that reverses a listint_t linked list
-101-print_listint_safe.c | Write a function that prints a listint_t linked list
-102-free_listint_safe.c | Write a function that frees a listint_t list
-103-find_loop.c | Write a function that finds the loop in a linked list
+
 
 ## Social
 **Follow me in [@JuanSGalvisH](https://twitter.com/JuanSGalvisH) [![Twitter Follow](https://img.shields.io/twitter/url/https/github.com/tterb/hyde.svg?style=social)](https://twitter.com/JuanSGalvisH)**
