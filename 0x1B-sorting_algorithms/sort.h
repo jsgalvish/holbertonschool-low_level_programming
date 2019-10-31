@@ -34,4 +34,3 @@ int partition(int arr[], int low, int high, size_t size);
 void qs(int arr[], int low, int high, size_t size);
 
 #endif /* SORT_H */
-l
