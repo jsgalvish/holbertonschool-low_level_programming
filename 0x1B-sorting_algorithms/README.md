@@ -1,1 +1,1 @@
-# Sorting algorithms & Big O
+# sorting algorithms and big o notation
